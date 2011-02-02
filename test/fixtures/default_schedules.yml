@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  route_id: 
+  scheduled_datetime: 2011-01-31 14:43:29
+
+two:
+  route_id: 
+  scheduled_datetime: 2011-01-31 14:43:29

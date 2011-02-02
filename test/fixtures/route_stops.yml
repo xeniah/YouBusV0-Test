@@ -1,0 +1,9 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  route_id: 
+  stop_id: 
+
+two:
+  route_id: 
+  stop_id: 

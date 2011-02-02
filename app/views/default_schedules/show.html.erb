@@ -1,0 +1,13 @@
+<p>
+  <b>Route:</b>
+  <%=h @default_schedule.bus_route_id %>
+</p>
+
+<p>
+  <b>Scheduled datetime:</b>
+  <%=h @default_schedule.scheduled_datetime %>
+</p>
+
+
+<%= link_to 'Edit', edit_default_schedule_path(@default_schedule) %> |
+<%= link_to 'Back', default_schedules_path %>

@@ -1,0 +1,22 @@
+<h1>Listing default_schedules</h1>
+
+<table>
+  <tr>
+    <th>Route</th>
+    <th>Scheduled datetime</th>
+  </tr>
+
+<% @default_schedules.each do |default_schedule| %>
+  <tr>
+    <td><%=h default_schedule.bus_route_id %></td>
+    <td><%=h default_schedule.scheduled_datetime %></td>
+    <td><%= link_to 'Show', default_schedule %></td>
+    <td><%= link_to 'Edit', edit_default_schedule_path(default_schedule) %></td>
+    <td><%= link_to 'Destroy', default_schedule, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New default_schedule', new_default_schedule_path %>

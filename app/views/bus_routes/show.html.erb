@@ -1,0 +1,18 @@
+<p>
+  <b>Route:</b>
+  <%=h @bus_route.bus_route_id %>
+</p>
+
+<p>
+  <b>Route type:</b>
+  <%=h @bus_route.route_type %>
+</p>
+
+<p>
+  <b>Route number:</b>
+  <%=h @bus_route.route_number %>
+</p>
+
+
+<%= link_to 'Edit', edit_bus_route_path(@bus_route) %> |
+<%= link_to 'Back', bus_routes_path %>

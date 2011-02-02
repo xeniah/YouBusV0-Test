@@ -1,0 +1,24 @@
+<h1>Listing bus_routes</h1>
+
+<table>
+  <tr>
+    <th>Route</th>
+    <th>Route type</th>
+    <th>Route number</th>
+  </tr>
+
+<% @bus_routes.each do |bus_route| %>
+  <tr>
+    <td><%=h bus_route.bus_route_id %></td>
+    <td><%=h bus_route.route_type %></td>
+    <td><%=h bus_route.route_number %></td>
+    <td><%= link_to 'Show', bus_route %></td>
+    <td><%= link_to 'Edit', edit_bus_route_path(bus_route) %></td>
+    <td><%= link_to 'Destroy', bus_route, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New bus_route', new_bus_route_path %>

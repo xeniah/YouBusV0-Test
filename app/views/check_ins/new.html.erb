@@ -1,0 +1,19 @@
+<h1>New check_in</h1>
+
+<% form_for(@check_in) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :bus_route_id %><br />
+    <%= f.text_field :bus_route_id %>
+  </p>
+  <p>
+    <%= f.label :checkin_datetime %><br />
+    <%= f.datetime_select :checkin_datetime %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', check_ins_path %>

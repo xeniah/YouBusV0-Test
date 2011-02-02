@@ -1,0 +1,22 @@
+<h1>Listing route_stops</h1>
+
+<table>
+  <tr>
+    <th>Route</th>
+    <th>Stop</th>
+  </tr>
+
+<% @route_stops.each do |route_stop| %>
+  <tr>
+    <td><%=h route_stop.route_id %></td>
+    <td><%=h route_stop.stop_id %></td>
+    <td><%= link_to 'Show', route_stop %></td>
+    <td><%= link_to 'Edit', edit_route_stop_path(route_stop) %></td>
+    <td><%= link_to 'Destroy', route_stop, :confirm => 'Are you sure?', :method => :delete %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New route_stop', new_route_stop_path %>

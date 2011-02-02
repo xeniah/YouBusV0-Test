@@ -1,0 +1,13 @@
+<p>
+  <b>Route:</b>
+  <%=h @route_stop.route_id %>
+</p>
+
+<p>
+  <b>Stop:</b>
+  <%=h @route_stop.stop_id %>
+</p>
+
+
+<%= link_to 'Edit', edit_route_stop_path(@route_stop) %> |
+<%= link_to 'Back', route_stops_path %>

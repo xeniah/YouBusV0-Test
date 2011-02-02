@@ -1,0 +1,13 @@
+<p>
+  <b>Route:</b>
+  <%=h @check_in.bus_route_id %>
+</p>
+
+<p>
+  <b>Checkin datetime:</b>
+  <%=h @check_in.checkin_datetime %>
+</p>
+
+
+<%= link_to 'Edit', edit_check_in_path(@check_in) %> |
+<%= link_to 'Back', check_ins_path %>

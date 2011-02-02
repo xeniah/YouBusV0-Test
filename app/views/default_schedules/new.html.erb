@@ -1,0 +1,19 @@
+<h1>New default_schedule</h1>
+
+<% form_for(@default_schedule) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :bus_route_id %><br />
+    <%= f.text_field :bus_route_id %>
+  </p>
+  <p>
+    <%= f.label :scheduled_datetime %><br />
+    <%= f.datetime_select :scheduled_datetime %>
+  </p>
+  <p>
+    <%= f.submit 'Create' %>
+  </p>
+<% end %>
+
+<%= link_to 'Back', default_schedules_path %>

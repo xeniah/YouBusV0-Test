@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  stop_id: 
+  longitude: 1.5
+  latitude: 1.5
+
+two:
+  stop_id: 
+  longitude: 1.5
+  latitude: 1.5

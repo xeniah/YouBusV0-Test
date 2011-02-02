@@ -1,0 +1,24 @@
+<h1>Editing bus_stop</h1>
+
+<% form_for(@bus_stop) do |f| %>
+  <%= f.error_messages %>
+
+  <p>
+    <%= f.label :stop_id %><br />
+    <%= f.text_field :stop_id %>
+  </p>
+  <p>
+    <%= f.label :longitude %><br />
+    <%= f.text_field :longitude %>
+  </p>
+  <p>
+    <%= f.label :latitude %><br />
+    <%= f.text_field :latitude %>
+  </p>
+  <p>
+    <%= f.submit 'Update' %>
+  </p>
+<% end %>
+
+<%= link_to 'Show', @bus_stop %> |
+<%= link_to 'Back', bus_stops_path %>

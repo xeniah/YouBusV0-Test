@@ -1,0 +1,11 @@
+# Read about fixtures at http://ar.rubyonrails.org/classes/Fixtures.html
+
+one:
+  route_id: 
+  route_type: MyString
+  route_number: 
+
+two:
+  route_id: 
+  route_type: MyString
+  route_number: 
